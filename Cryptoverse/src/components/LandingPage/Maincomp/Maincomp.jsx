@@ -4,9 +4,11 @@ import Button from '../../Common/Button/Button'
 import iphone from "../../../assets/iphone.png"
 import grad from "../../../assets/Grad.png"
 import { motion } from "framer-motion"
+import { useNavigate } from 'react-router-dom'
 
 
 const Maincomp = () => {
+    const Navigate = useNavigate();
 
     return (
         <>
@@ -28,7 +30,7 @@ const Maincomp = () => {
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.75 }}>
-                        <Button text={"Dashborad"} outlined={false}
+                        <Button onClick={()=>Navigate('/dashboard')} text={"Dashborad"} outlined={false}
                         />
                         <Button text={"Share"} outlined={true} />
 
