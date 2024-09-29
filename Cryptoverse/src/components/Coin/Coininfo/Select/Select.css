@@ -1,0 +1,31 @@
+.select-days {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+  gap: 0.5rem;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+ 
+}
+
+/* Responsive styles for tablets and smaller screens */
+@media (max-width: 768px) {
+  .select-days {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Align the content vertically */
+      gap: 1rem; /* Increase gap between elements for better spacing */
+      margin-bottom: 1rem; 
+      padding-left: 100px;
+      padding-right: 100px;/* Reduce bottom margin on smaller screens */
+  }
+}
+
+/* For very small devices (mobile phones) */
+@media (max-width: 480px) {
+  .select-days {
+      align-items: center; /* Align the content centrally */
+      gap: 0.5rem; /* Keep smaller gap */
+      margin-bottom: 0.5rem; /* Reduce margin even further for small screens */
+  }
+}

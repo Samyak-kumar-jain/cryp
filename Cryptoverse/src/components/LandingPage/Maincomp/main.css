@@ -1,0 +1,187 @@
+.flex-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 3rem;
+}
+.track, .real{
+    font-size: 7rem;
+    margin: 0;
+    line-height: -10rem;
+    font-weight: 600;
+    
+
+}
+.real{
+    color:var(--gold);
+    margin-top: -2.5rem;
+
+}
+.track{
+    
+    color: var(--white);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+}
+.track:hover{
+    color: var(--black);
+    -webkit-text-stroke-color: white;
+    transition: all 0.3s;
+    
+}
+.info-text{
+    font-size: 1rem;
+    color: rgb(169, 169, 169);
+    margin-left: 0.5rem;
+
+}
+.btn-flex{
+    display: flex;
+    justify-content: flex-start;
+    gap:1.5rem;
+    margin-top: 1.5rem;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+.right-comp{
+    width: 40%;
+    position: relative;
+    /* border: 2px solid white; */
+    margin-top: -25rem;
+
+
+}
+.iphone{
+position: absolute;
+z-index: 100;
+   min-width: 300px;
+   width: 50%;   
+   right: 1rem; 
+
+}
+.gradient{
+    position: absolute;
+    min-width: 250px;
+    width: 40%;
+    top:4rem;
+    right:1rem
+}
+@media only screen and (max-width:1318px) {
+    .track, .real{
+        font-size: 5rem;
+        margin: 0;
+        line-height: -10rem;
+        font-weight: 600;
+        
+    
+    }
+
+    
+}
+@media only screen and (max-width:1054px) {
+    .iphone{
+        position: absolute;
+        z-index: 100;
+           min-width: 250px;
+           width: 50%;   
+           right: 1rem; 
+        
+        }
+        .gradient{
+       
+            min-width: 200px;
+            width: 40%;
+            top:4rem;
+            right:1rem
+        }
+
+    
+}
+@media only screen and (max-width:962px) {
+  .flex-info{
+    flex-direction: column;
+  }.right-comp{
+   
+    display: block;
+    margin-top:4rem;
+    /* margin: auto; */
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+
+  }
+  .iphone{
+    position: absolute;
+    z-index: 100;
+       min-width: 290px;
+       width: 50%;   
+       right: 0rem; 
+       
+    
+    }
+    .gradient{
+        position: absolute;
+        min-width: 240px;
+        width: 40%;
+        top:4rem;
+        right:0rem;
+    
+    }
+    .track, .real{
+        font-size: 4rem;
+        
+        text-align: center;
+       
+        
+    
+    }
+    .info-text{
+        font-size: 1rem;
+        /* width: 70%; */
+        /* justify-content: center; */
+       
+        text-align: center;
+    
+    }
+ .btn-flex{
+    justify-content: center;
+ }
+
+
+    
+}
+@media only screen and (max-width:620px) {
+    .track, .real{
+        font-size: 3.5rem;
+        margin: 0;
+        line-height: -10rem;
+        font-weight: 600;
+        
+    
+    }
+    .right-comp{
+   
+        display: block;
+        margin-top:4rem;
+        /* margin: auto; */
+        align-items: center;
+        justify-content: center;
+        margin-left: 10rem;
+    
+      }
+}
+@media only screen and (max-width:470px) {
+    .track, .real{
+        font-size: 3.5rem;
+     
+        
+        
+    
+    }
+    .right-comp{
+   
+      
+        margin-left: 11rem;
+    
+      }
+}

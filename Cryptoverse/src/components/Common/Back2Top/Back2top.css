@@ -1,0 +1,26 @@
+.Back2Top {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    margin: 1.5rem;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    color: var(--gold); /* Icon color */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s; /* Smooth transition for effects */
+  }
+  
+  /* Hover Effect */
+  
+  
+  /* Active (Click) Effect */
+  .Back2Top:active {
+    transform: scale(0.95); /* Slightly shrink the button on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+  }
+  

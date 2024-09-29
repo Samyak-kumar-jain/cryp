@@ -1,0 +1,67 @@
+/* Header.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.3s, backdrop-filter 0.3s;
+}
+
+.navbar.glassy {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Glass effect */
+}
+
+.links {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.link {
+  color: var(--grey);
+  font-weight: 600;
+  transition: color 0.2s linear, font-weight 0.3s linear;
+}
+
+.link:hover {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.logo {
+  color: var(--white);
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+}
+
+.mobile-drawer {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    padding: 1.5rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .links {
+    display: none;
+  }
+  .mobile-drawer {
+    display: block;
+  }
+  .drawer-div {
+    width: 40vw;
+    background-color: var(--black);
+    height: 100vh;
+    padding: 1.5rem;
+  }
+}

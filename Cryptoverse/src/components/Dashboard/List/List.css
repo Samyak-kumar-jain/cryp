@@ -1,0 +1,118 @@
+/* Base styles */
+.list-row {
+    border: 1px solid rgb(44, 44, 42);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem !important;
+    padding: 1rem;
+    width: 90vw;
+    overflow-x: auto; /* Horizontal scrolling enabled */
+    margin: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: var(--lightgrey);
+}
+
+/* Custom scrollbar */
+.list-row::-webkit-scrollbar {
+    height: 5px; /* Reduce scrollbar height */
+}
+
+.list-row::-webkit-scrollbar-track {
+    background: transparent; /* Transparent background for scrollbar track */
+}
+
+.list-row::-webkit-scrollbar-thumb {
+    background-color: rgba(43, 43, 42, 0.2); /* Semi-transparent thumb */
+    border-radius: 10px; /* Rounded edges for the thumb */
+}
+
+.list-row:hover {
+    background-color: var(--darkgrey);
+    transition: background-color linear 0.3s;
+}
+
+.list-table {
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+    overflow-x: auto; /* Allow horizontal scrolling for smaller viewports */
+    border-collapse: collapse;
+}
+
+.list-row td {
+    text-align: left;
+    width: 20%;
+}
+
+.td-image {
+    width: 2rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+}
+
+.td-center-align {
+    text-align: center;
+}
+
+.mobile-td-mkt {
+    display: none;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1200px) {
+    .list-table {
+        width: 90%;
+    }
+
+    .list-row {
+        gap: 1.5rem;
+        padding: 0.75rem;
+        margin: 0.75rem;
+    }
+
+    .list-row td {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .td-icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .td-total-volume {
+        display: none;
+    }
+    
+    .desktop-td-mkt {
+        display: none;
+    }
+
+    .mobile-td-mkt {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .list-row {
+        gap: 1.5rem;
+        padding: 0.75rem;
+        margin: 0.75rem;
+    }
+
+    .list-row td {
+        width: 35%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .price-chip{
+        display: none;
+    }
+    .list-row{
+        margin-right: 100px;
+    }
+}

@@ -1,0 +1,27 @@
+.chart-container {
+    width: 100%;
+    /* max-width: 800px;/ Max width on larger screens */
+    height: 400px; /* Adjust height as needed */
+    
+    margin: 0 auto; /* Center the chart */
+  }
+  
+  @media (max-width: 1200px) {
+    .chart-container {
+      height: 350px; /* Adjust height for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .chart-container {
+        /* margin-right: 100px; */
+        height: 300px; /* Smaller height for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .chart-container {
+      height: 250px; /* Smaller height for mobile devices */
+    }
+  }
+  

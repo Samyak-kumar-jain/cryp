@@ -1,0 +1,119 @@
+.grid-cont{
+    width:320px;
+    background-color: var(--darkgrey);
+    border: 2px solid var(--darkgrey);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+
+}
+.grid-cont:hover{
+    border-color: var(--green);
+    transition: all 0.3s;
+
+}
+.grid-cont-red:hover{
+    border-color: var(--red);
+    transition: all 0.3s;
+}
+.info-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1rem;
+    margin: 0.2rem 0.5rem;
+
+}
+.coin-logo{
+    height:3rem;
+    width:3rem;
+    margin-bottom: 1rem;
+}
+.coin-symbol{
+    color:var(--white);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin:0;
+
+}
+.coin-name{
+    color:var(--grey);
+    text-transform: capitalize;
+    font-weight: light;
+    font-size: 1rem;
+    margin:0;
+
+}
+.name-col{
+    display: flex;
+    flex-direction: column;
+    /* gap:0.1rem; */
+}
+.chip{
+    display: flex;
+    /* justify-content: center; */
+    gap:1rem;
+    align-items: center;
+    margin: 0.6rem 0.5rem;
+    /* left:0 */
+
+}
+.price-chip{
+    border:2px solid var(--green);
+    border-radius:1rem;
+    color:var(--green);
+    padding: 0.25rem 1.25rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+
+}
+.price-chip:hover, .icon-chip:hover{
+    background-color: var(--green);
+    color: var(--white);
+    transition: all linear 0.4s;
+}
+.chip-red{
+    border:2px solid var(--red) !important;
+    color:var(--red ) !important;
+
+
+}
+.chip-red:hover{
+    background-color: var(--red) !important;
+    color: var(--white) !important;
+    transition: all linear 0.4s;
+
+}
+.icon-chip{
+    border:2px solid var(--green);
+    border-radius:50%;
+    color:var(--green);
+    padding: 1rem;
+    height: 2rem;
+    width:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+
+}
+.info-container{
+    margin: 1rem;
+    
+
+}
+.info-container h3{
+    color:var(--green);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.mt{
+    margin-top: 1rem;
+}
+.total-v{
+    color:var(--grey);
+    font-size:0.9rem;
+    margin-top: 0.5rem;
+
+}

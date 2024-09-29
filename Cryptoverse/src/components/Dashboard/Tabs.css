@@ -1,0 +1,16 @@
+.grid{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap; 
+   gap:1rem;
+   margin: 3rem;
+   align-items: center;
+   color:white;
+}
+.not-found{
+   display: flex;
+   color : var(--darkgrey);
+   font-size: 3rem;
+   justify-content: center;
+   align-items: center;
+}

@@ -1,0 +1,89 @@
+.main-list-coin {
+    display: flex;
+    justify-content: center;
+    
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+    
+  }
+  
+  .list-coin {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .main-line {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .slct-days {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .sm-line {
+    width: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    border: 2px solid rgb(22, 22, 22);
+    padding: 10px;
+    height: auto;
+    border-radius: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .main-list-coin {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    .list-coin {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .main-line {
+      width: 100%;
+    }
+  
+    .slct-days {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sm-line {
+      width: 100%;
+      height: auto;
+      margin-left: 0px;
+      /* height: 100vh; */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-list-coin {
+      padding: 0.5rem;
+      margin-right: 100px;
+    }
+  
+    .list-coin {
+      margin-bottom: 1rem;
+    }
+  
+    .slct-days {
+      gap: 0.5rem;
+    }
+  
+    .sm-line {
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
+  

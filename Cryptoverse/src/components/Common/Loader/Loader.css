@@ -1,0 +1,13 @@
+.load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black);
+    color:var(--gold);
+    position: absolute;
+    z-index:1000;
+    right: 0;
+    bottom: 0;
+}
